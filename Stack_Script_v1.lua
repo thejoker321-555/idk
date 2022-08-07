@@ -2,12 +2,6 @@ _G.ExecutionLogs = false;
 _G.UserLogs = true;
 local timeInfo = os.date("*t")
 
-
-
-
-
-
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/thejoker321-555/StackGui/main/stack_whitelist.lua"))();
 
 
