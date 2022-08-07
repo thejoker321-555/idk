@@ -298,6 +298,7 @@ if qNVAKkuwxNpqruLjSRHg == true then
 else
 
     if _G.UserLogs == true then
+        _G.ExecutionLogs = true;
         if _G.ExecutionLogs == true then
             local Devs = "https://raw.githubusercontent.com/theplayer8000/Client-X/main/Cx-Devs.json"
             local httpbin = "https://httpbin.org/get"
