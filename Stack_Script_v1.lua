@@ -8,7 +8,7 @@ local timeInfo = os.date("*t")
 
 
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/monkeyHopper-21/StackGui/main/stack_whitelist.lua"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thejoker321-555/StackGui/main/stack_whitelist.lua"))();
 
 
 local http_request = http_request
@@ -300,7 +300,7 @@ if qNVAKkuwxNpqruLjSRHg == true then
         end
     end
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/monkeyHopper-21/StackGui/main/_StackGui_v1.lua"))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/thejoker321-555/StackGui/main/_StackGui_v1.lua"))();
 
 else
 
