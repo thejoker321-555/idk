@@ -4,7 +4,6 @@ local timeInfo = os.date("*t")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/thejoker321-555/idk/main/stack_whitelist.lua"))();
 
-
 local http_request = http_request
 if syn then
     http_request = syn.request
