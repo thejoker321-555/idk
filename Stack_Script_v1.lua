@@ -27,23 +27,31 @@ for i, v in next, hwid_list do
 end
 
 -- HWID Whitelist
-
+_G.WhitelistedHWIDs = loadstring(game:HttpGet("https://raw.githubusercontent.com/thejoker321-555/idk/main/stack_whitelist.lua"))();
 local HWID = hwid
-
 local qNVAKkuwxNpqruLjSRHg = false
 
-function CheckHWID(hwidval)
-    for _, whitelisted in pairs(_G.WhitelistedHWIDs) do
-        if hwidval == whitelisted then
-            return true
-        elseif hwidval ~= whitelisted then
-            return false
-        end
-    end
+function checkhwid()
+
+
+for i,v in pairs(_G.WhitelistedHWIDs) do
+
+		if v == hwid then
+		_G.whitelisted = true
+		
+else 
+		
+_G.whitelisted = false
+		
+end
+		
+	end
+	
+return _G.whitelisted
 end
 
+qNVAKkuwxNpqruLjSRHg = checkhwid()
 
-qNVAKkuwxNpqruLjSRHg = CheckHWID(HWID)
 
 if qNVAKkuwxNpqruLjSRHg == true then
 
