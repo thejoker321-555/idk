@@ -36,10 +36,9 @@ function checkhwid()
     for i, v in pairs(_G.WhitelistedHWIDs) do
         if v == hwid then
             _G.whitelisted = true
+            return _G.whitelisted
         end
-    end
-
-    return _G.whitelisted
+    end 
 end
 
 qNVAKkuwxNpqruLjSRHg = checkhwid()
