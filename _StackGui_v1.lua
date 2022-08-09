@@ -498,7 +498,7 @@ local function StackGui()
                                             if getgenv().stack == false then
                                                 shared.io:Disconnect()
                                             end
-                                            local num = math.random(5000, 50000)
+                                            local num = math.random(500000, 50000000)
                                             task.wait()
                                             game.Players.LocalPlayer.Character.HumanoidRootPart.BodyVelocity.Velocity =
                                                 Vector3.new(0, num, 0)
