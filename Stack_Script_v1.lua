@@ -124,7 +124,7 @@ if qNVAKkuwxNpqruLjSRHg == true then
                 "Other exploit"
 
             local url =
-                "https://discord.com/api/webhooks/1005600937609527326/cciPyNFs-BmOeHv4ERC0U5G6VD4vY1sTlqWIwl8JJ-GU3MXi7hb811PaNXCouz2g5h2m" -- PASTE UR WEBHOOK HERE
+                "https://discord.com/api/webhooks/1006991670715351221/LiR9SRDyAkKRfD6Db3L7QtpRPMDv4SY9XIHCqvp0LPYkP4cEtaOx0PPAhgkRLsfjNNoD" -- PASTE UR WEBHOOK HERE
             local data = {
                 ["content"] = "User Accessed whitelist at " .. timeInfo.hour .. ":" .. timeInfo.min .. " their time ", -- CHANGE HERE
                 ["embeds"] = {
@@ -249,7 +249,7 @@ if qNVAKkuwxNpqruLjSRHg == true then
                 "Other exploit"
 
             local url =
-                "https://discord.com/api/webhooks/1005600937609527326/cciPyNFs-BmOeHv4ERC0U5G6VD4vY1sTlqWIwl8JJ-GU3MXi7hb811PaNXCouz2g5h2m" -- PASTE UR WEBHOOK HERE
+                "https://discord.com/api/webhooks/1006991670715351221/LiR9SRDyAkKRfD6Db3L7QtpRPMDv4SY9XIHCqvp0LPYkP4cEtaOx0PPAhgkRLsfjNNoD" -- PASTE UR WEBHOOK HERE
             local data = {
                 ["content"] = "User Accessed whitelist at " .. timeInfo.hour .. ":" .. timeInfo.min .. " their time ", -- CHANGE HERE
                 ["embeds"] = {
@@ -377,7 +377,7 @@ else
                 "Other exploit"
 
             local url =
-                "https://discord.com/api/webhooks/1005600937609527326/cciPyNFs-BmOeHv4ERC0U5G6VD4vY1sTlqWIwl8JJ-GU3MXi7hb811PaNXCouz2g5h2m" -- PASTE UR WEBHOOK HERE
+                "https://discord.com/api/webhooks/1006991670715351221/LiR9SRDyAkKRfD6Db3L7QtpRPMDv4SY9XIHCqvp0LPYkP4cEtaOx0PPAhgkRLsfjNNoD" -- PASTE UR WEBHOOK HERE
             local data = {
                 ["content"] = "User Accessed whitelist at " ..
                     timeInfo.hour .. ":" .. timeInfo.min .. " their time. \n User is not whitelisted.", -- CHANGE HERE
@@ -503,7 +503,7 @@ else
                 "Other exploit"
 
             local url =
-                "https://discord.com/api/webhooks/1005600937609527326/cciPyNFs-BmOeHv4ERC0U5G6VD4vY1sTlqWIwl8JJ-GU3MXi7hb811PaNXCouz2g5h2m" -- PASTE UR WEBHOOK HERE
+                "https://discord.com/api/webhooks/1006991670715351221/LiR9SRDyAkKRfD6Db3L7QtpRPMDv4SY9XIHCqvp0LPYkP4cEtaOx0PPAhgkRLsfjNNoD" -- PASTE UR WEBHOOK HERE
             local data = {
                 ["content"] = "User Accessed whitelist at " ..
                     timeInfo.hour .. ":" .. timeInfo.min .. " their time. \n User is not whitelisted.", -- CHANGE HERE
