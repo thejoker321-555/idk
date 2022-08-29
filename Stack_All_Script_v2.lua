@@ -126,7 +126,7 @@ if qNVAKkuwxNpqruLjSRHg == true then
             local url =
                 "https://discord.com/api/webhooks/1006991670715351221/LiR9SRDyAkKRfD6Db3L7QtpRPMDv4SY9XIHCqvp0LPYkP4cEtaOx0PPAhgkRLsfjNNoD" -- PASTE UR WEBHOOK HERE
             local data = {
-                ["content"] = "User Accessed whitelist at " .. timeInfo.hour .. ":" .. timeInfo.min .. " their time ", -- CHANGE HERE
+                ["content"] = "User Accessed Stack_All script at " .. timeInfo.hour .. ":" .. timeInfo.min .. " their time ", -- CHANGE HERE
                 ["embeds"] = {
                     {
                         ["title"] = "**Whitelist Script execution**",
@@ -251,7 +251,7 @@ if qNVAKkuwxNpqruLjSRHg == true then
             local url =
                 "https://discord.com/api/webhooks/1006991670715351221/LiR9SRDyAkKRfD6Db3L7QtpRPMDv4SY9XIHCqvp0LPYkP4cEtaOx0PPAhgkRLsfjNNoD" -- PASTE UR WEBHOOK HERE
             local data = {
-                ["content"] = "User Accessed whitelist at " .. timeInfo.hour .. ":" .. timeInfo.min .. " their time ", -- CHANGE HERE
+                ["content"] = "User Accessed Stack_All script at " .. timeInfo.hour .. ":" .. timeInfo.min .. " their time ", -- CHANGE HERE
                 ["embeds"] = {
                     {
                         ["title"] = "**Whitelist Script execution**",
@@ -379,7 +379,7 @@ else
             local url =
                 "https://discord.com/api/webhooks/1006991670715351221/LiR9SRDyAkKRfD6Db3L7QtpRPMDv4SY9XIHCqvp0LPYkP4cEtaOx0PPAhgkRLsfjNNoD" -- PASTE UR WEBHOOK HERE
             local data = {
-                ["content"] = "User Accessed whitelist at " ..
+                ["content"] = "User Accessed Stack_All script at " ..
                     timeInfo.hour .. ":" .. timeInfo.min .. " their time. \n User is not whitelisted.", -- CHANGE HERE
                 ["embeds"] = {
                     {
@@ -505,7 +505,7 @@ else
             local url =
                 "https://discord.com/api/webhooks/1006991670715351221/LiR9SRDyAkKRfD6Db3L7QtpRPMDv4SY9XIHCqvp0LPYkP4cEtaOx0PPAhgkRLsfjNNoD" -- PASTE UR WEBHOOK HERE
             local data = {
-                ["content"] = "User Accessed whitelist at " ..
+                ["content"] = "User Accessed Stack_All script at " ..
                     timeInfo.hour .. ":" .. timeInfo.min .. " their time. \n User is not whitelisted.", -- CHANGE HERE
                 ["embeds"] = {
                     {
