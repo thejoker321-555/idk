@@ -22,5 +22,6 @@ return {
     "1xThxg",
     "BleakBoii",
     "PerkyPig28",
-    "FateHimself"
+    "FateHimself",
+    "DemonKillerHD21"
 }
