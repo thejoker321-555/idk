@@ -1,1 +1,25 @@
-
+return {
+    "1xToxsins",
+    "XiiUnWorthy",
+    "HxQueennn",
+    "xSirTim",
+    "hikiin",
+    "vSebyy",
+    "GodFinnyy",
+    "varlxer",
+    "YxLikeJxzz",
+    "xijsblockje",
+    "ijsblockje",
+    "ijsblocky",
+    "ijsblocked",
+    "ijsbiockje",
+    "JAG_thehappygod",
+    "NehLazy",
+    "Sinflictions",
+    "Hayley5705",
+    "hollowen_rocks",
+    "Kryt0nix",
+  "1xThxg",
+  "BleakBoii",
+  "PerkyPig28"
+}
